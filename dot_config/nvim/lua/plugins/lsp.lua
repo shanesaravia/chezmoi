@@ -22,20 +22,14 @@ return {
       ruff = { enabled = false },
       eslint = {
         settings = {
-          -- Enable auto-fixing on save
-          autoFixOnSave = true,
-          -- Run eslint when you save the file
-          run = "onSave",
-          -- Enable import organization
-          -- codeActionOnSave = {
-          --   enable = true,
-          --   mode = "all",
+          format = false,
+          -- autoFixOnSave = true,
+          -- run = "onSave",
+          -- codeAction = {
+          --   showDocumentation = {
+          --     enable = true,
+          --   },
           -- },
-          codeAction = {
-            showDocumentation = {
-              enable = true,
-            },
-          },
         },
       },
     },
