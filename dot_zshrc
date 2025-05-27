@@ -110,8 +110,22 @@ export GOROOT="$(brew --prefix golang)/libexec"
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
-# imgcat
-imgcat ~/Pictures/sleeping-panda.png
+# Function to display images based on terminal
+function showimg() {
+    if [[ $TERM == "xterm-kitty" ]]; then
+        kitten icat --align left "$@"
+    elif [[ $TERM_PROGRAM == "iTerm.app" ]]; then
+        imgcat "$@"
+    else
+        echo "Images not supported"
+    fi
+}
+
+# imgcat (iterm2)
+# imgcat ~/Pictures/sleeping-panda.png
+# icat (kitten)
+# kitten icat --align left ~/Pictures/sleeping-panda.png
+showimg ~/Pictures/sleeping-panda.png
 # figlet
 # printf "\e[36;1m" && figlet -f standard "Flawless"
 printf "\u001b[38;5;39m" && figlet -f standard "Flawless"
