@@ -11,3 +11,7 @@ vim.keymap.set("i", "<c-k>", "<C-p>", { desc = "Previous completion item" })
 vim.keymap.set("n", "<leader>z", function()
   Snacks.zen.zoom()
 end, { desc = "Toggle Zen Mode" })
+-- Buffer search
+vim.keymap.set("n", "<leader>bs", function()
+  Snacks.picker.buffers()
+end, { desc = "Search Buffers" })
