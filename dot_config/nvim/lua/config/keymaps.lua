@@ -7,3 +7,7 @@ vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Line Diagnostics"
 -- Prev/Next Completion Item
 vim.keymap.set("i", "<c-j>", "<C-n>", { desc = "Next completion item" })
 vim.keymap.set("i", "<c-k>", "<C-p>", { desc = "Previous completion item" })
+-- Toggle zoom using Snacks
+vim.keymap.set("n", "<leader>z", function()
+  Snacks.zen.zoom()
+end, { desc = "Toggle Zen Mode" })
