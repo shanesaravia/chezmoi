@@ -191,5 +191,10 @@ export PATH="$PATH:/Users/shanesaravia/.local/bin"
 # rbenv
 eval "$(rbenv init -)"
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 alias vimm=vim
 alias vim=nvim
+alias ls="eza --icons=always"
+alias cd="z"
