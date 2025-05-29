@@ -15,3 +15,18 @@ end, { desc = "Toggle Zen Mode" })
 vim.keymap.set("n", "<leader>bs", function()
   Snacks.picker.buffers()
 end, { desc = "Search Buffers" })
+-- Temporarily disable some Pyright rules
+vim.keymap.set("n", "<leader>xh", function()
+  require("lspconfig").pyright.setup({
+    settings = {
+      python = {
+        analysis = {
+          reportUnknownParameterType = false,
+          reportMissingParameterType = false,
+        },
+      },
+    },
+  })
+  -- Notify the user
+  vim.notify("Pyright: Some rules temprarily disabled. " .. "Please restart LazyVim to re-enable rules")
+end, { desc = "Disable some Pyright rules temporarily" })
