@@ -5,6 +5,7 @@
 - `1-0/A-Z` - Available keys
 - `Option+Shift+<Key>` - Move focused window to workspace
 - `Option+<Key>` - Jump to workspace
+- `Option+Tab` - Jump between current and previous workspace
 
 ## Custom Workspaces
 
