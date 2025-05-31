@@ -189,7 +189,7 @@ alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
-cmd-enter = "exec-and-forget kitty --single-instance"
+# cmd-enter = "exec-and-forget kitty --single-instance"
 
 # Move windows between monitors
 # alt-shift-leftSquareBracket = 'move-node-to-monitor --wrap-around prev'
