@@ -6,3 +6,14 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+-- Enable EslintFixAll automatically on save via eslint-lsp
+-- local autocmd = vim.api.nvim_create_autocmd
+--
+-- -- Auto format with ESLint on save
+-- autocmd("BufWritePre", {
+--   pattern = { "*.js", "*.jsx", "*.ts", "*.tsx" },
+--   callback = function()
+--     vim.cmd("EslintFixAll")
+--   end,
+-- })
