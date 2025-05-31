@@ -18,7 +18,7 @@ return {
           },
         },
       },
-      ruff_lsp = { enabled = false },
+      -- ruff_lsp = { enabled = false },
       ruff = { enabled = false },
       eslint = {
         settings = {
@@ -32,6 +32,12 @@ return {
           -- },
         },
       },
+      -- vtsls = {
+      --   root_dir = function(fname)
+      --     -- Find git root using modern API
+      --     return vim.fs.root(fname, ".git") or vim.fs.root(fname, { "package.json", "tsconfig.json" })
+      --   end,
+      -- },
     },
   },
 }
