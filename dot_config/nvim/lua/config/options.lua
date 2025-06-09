@@ -1,3 +1,21 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+
+-- Override separator color with delay
+-- local function set_separator()
+--   vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#b4befe", bold = true })
+-- end
+--
+-- -- Set after everything loads
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--   callback = function()
+--     vim.defer_fn(set_separator, 100)
+--   end,
+-- })
+--
+-- -- Set on colorscheme change
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+--   callback = function()
+--     vim.defer_fn(set_separator, 50)
+--   end,
+-- })

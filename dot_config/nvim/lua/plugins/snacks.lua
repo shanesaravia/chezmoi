@@ -5,8 +5,8 @@ return { -- mostly used for its notifications
       follow = "file",
     },
     picker = {
-      hidden = true,
-      ignored = true,
+      -- hidden = true,
+      -- ignored = true,
     },
     styles = {
       notification = {
