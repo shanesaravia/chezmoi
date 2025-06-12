@@ -30,3 +30,27 @@ vim.keymap.set("n", "<leader>xh", function()
   -- Notify the user
   vim.notify("Pyright: Some rules temprarily disabled. " .. "Please restart LazyVim to re-enable rules")
 end, { desc = "Disable some Pyright rules temporarily" })
+-- Set default grep to cwd (entire codebase search)
+vim.keymap.set("n", "<leader>/", "<cmd>lua Snacks.picker.grep()<cr>", { desc = "Grep (cwd)" })
+-- Set default file search to cwd (entire codebase search)
+vim.keymap.set("n", "<leader><space>", "<cmd>lua Snacks.picker.files()<cr>", { desc = "Find Files (cwd)" })
+
+-- Reverse file finding
+vim.keymap.set("n", "<leader>ff", function()
+  require("snacks").picker.files() -- Default is cwd
+end, { desc = "Find Files (cwd)" })
+
+vim.keymap.set("n", "<leader>fF", function()
+  local root = require("lazyvim.util").root.get()
+  require("snacks").picker.files({ cwd = root })
+end, { desc = "Find Files (root dir)" })
+
+-- Reverse explorer
+vim.keymap.set("n", "<leader>e", function()
+  require("snacks").picker.explorer() -- Default is cwd
+end, { desc = "Explorer (cwd)" })
+
+vim.keymap.set("n", "<leader>E", function()
+  local root = require("lazyvim.util").root.get()
+  require("snacks").picker.explorer({ cwd = root })
+end, { desc = "Explorer (root dir)" })
