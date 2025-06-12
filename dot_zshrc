@@ -200,3 +200,4 @@ alias ls="eza --icons=always"
 alias cd="z"
 alias cat=bat
 alias kssh="kitty +kitten ssh"
+alias gpurge="git branch -vv | grep "gone" | awk '{print $1}' | xargs git branch -D"
