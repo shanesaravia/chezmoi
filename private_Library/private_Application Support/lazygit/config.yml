@@ -2,3 +2,5 @@ keybinding:
   universal:
     scrollUpMain: '<c-k>'
     scrollDownMain: '<c-j>'
+os:
+  editPreset: 'nvim'
