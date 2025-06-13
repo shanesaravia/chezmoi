@@ -54,3 +54,24 @@ vim.keymap.set("n", "<leader>E", function()
   local root = require("lazyvim.util").root.get()
   require("snacks").picker.explorer({ cwd = root })
 end, { desc = "Explorer (root dir)" })
+
+-- Reverse grep search
+vim.keymap.set("n", "<leader>sg", function()
+  require("snacks").picker.grep() -- Default is cwd
+end, { desc = "Grep (cwd)" })
+
+vim.keymap.set("n", "<leader>sG", function()
+  local root = require("lazyvim.util").root.get()
+  require("snacks").picker.grep({ cwd = root })
+end, { desc = "Grep (root dir)" })
+
+-- Reverse grep word search
+vim.keymap.set({ "n", "x" }, "<leader>sw", function()
+  require("snacks").picker.grep_word()
+end, { desc = "Visual selection or word (cwd)" })
+
+vim.keymap.set({ "n", "x" }, "<leader>sW", function()
+  require("snacks").picker.grep_word({
+    cwd = require("lazyvim.util").root.get(),
+  })
+end, { desc = "Visual selection or word (Root Dir)" })
