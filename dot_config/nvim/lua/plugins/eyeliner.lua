@@ -4,7 +4,7 @@ return {
   opts = {
     highlight_on_key = true,
     dim = true,
-    -- default_keymaps = false,
+    default_keymaps = true,
     highlight_visible = true,
     highlight_hidden = true,
   },
