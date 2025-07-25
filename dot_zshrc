@@ -175,6 +175,11 @@ export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
 
+# Load Secrets
+if [ -f ~/.secrets ]; then
+    source ~/.secrets
+fi
+
 # vim
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
