@@ -23,8 +23,8 @@ return {
       eslint = {
         settings = {
           format = false,
-          -- autoFixOnSave = true,
-          -- run = "onSave",
+          autoFixOnSave = false,
+          run = "onSave",
           -- codeAction = {
           --   showDocumentation = {
           --     enable = true,
