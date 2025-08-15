@@ -6,7 +6,7 @@ return {
         enabled = false, -- This disables f, F, t, T motions
       },
       search = {
-        enabled = true, -- Keep search mode
+        enabled = false, -- Keep search mode
       },
       treesitter = {
         enabled = true, -- Keep treesitter mode

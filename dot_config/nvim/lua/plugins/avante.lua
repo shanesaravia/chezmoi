@@ -8,8 +8,6 @@ return {
   ---@module 'avante'
   ---@type avante.Config
   opts = {
-    -- add any opts here
-    -- for example
     provider = "claude",
     providers = {
       claude = {
@@ -20,6 +18,9 @@ return {
           temperature = 0.75,
           max_tokens = 20480,
         },
+      },
+      copilot = {
+        hide_in_model_selector = true,
       },
     },
   },
