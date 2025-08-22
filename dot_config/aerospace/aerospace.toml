@@ -181,7 +181,7 @@ alt-shift-v = 'move-node-to-workspace V'
 alt-shift-w = 'move-node-to-workspace W'
 alt-shift-x = 'move-node-to-workspace X'
 alt-shift-y = 'move-node-to-workspace Y'
-alt-shift-z = 'move-node-to-workspace Z'
+# alt-shift-z = 'move-node-to-workspace Z'
 
 alt-shift-f = 'fullscreen'
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -190,7 +190,8 @@ alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 # Reset -- evenly space
 alt-shift-r = 'balance-sizes'
-
+# Toggle floating
+alt-shift-z = 'floating toggle'
 
 # cmd-enter = "exec-and-forget kitty --single-instance"
 
