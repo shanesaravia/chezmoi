@@ -8,7 +8,7 @@ return {
   ---@module 'avante'
   ---@type avante.Config
   opts = {
-    provider = "claude",
+    provider = "openrouter_claude",
     providers = {
       claude = {
         endpoint = "https://api.anthropic.com",
@@ -21,6 +21,30 @@ return {
       },
       copilot = {
         hide_in_model_selector = true,
+      },
+      openrouter_claude = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        model = "anthropic/claude-sonnet-4",
+      },
+      openrouter_gpt = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        model = "openai/gpt-5",
+      },
+      openrouter_gemini = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        model = "google/gemini-2.5-pro",
+      },
+      openrouter_deepseek = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        model = "deepseek/deepseek-chat-v3.1",
       },
     },
   },
