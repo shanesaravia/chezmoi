@@ -2,7 +2,25 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      basedpyright = {
+        enabled = true,
+        settings = {
+          basedpyright = {
+            analysis = {
+              diagnosticSeverityOverrides = {
+                reportUnknownMemberType = false,
+                reportUnknownArgumentType = false,
+                reportUnknownVariableType = false,
+                reportUnknownParameterType = false,
+                reportUntypedFunctionDecorator = false,
+              },
+              autoImportCompletions = true,
+            },
+          },
+        },
+      },
       pyright = {
+        enabled = false,
         settings = {
           python = {
             analysis = {
