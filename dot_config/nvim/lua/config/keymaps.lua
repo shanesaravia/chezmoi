@@ -13,9 +13,17 @@ vim.keymap.set("n", "<leader>bs", function()
   Snacks.picker.buffers()
 end, { desc = "Search Buffers" })
 -- Buffer move next
-vim.keymap.set("n", "<leader>b>", "<cmd>BufferLineMoveNext<CR>", { desc = "Move buffer right" })
+vim.keymap.set("n", "<leader>b>", function()
+  for _ = 1, vim.v.count1 do
+    vim.cmd("BufferLineMoveNext")
+  end
+end, { silent = true, desc = "Move buffer right" })
 -- Buffer move prev
-vim.keymap.set("n", "<leader>b<", "<cmd>BufferLineMovePrev<CR>", { desc = "Move buffer left" })
+vim.keymap.set("n", "<leader>b<", function()
+  for _ = 1, vim.v.count1 do
+    vim.cmd("BufferLineMovePrev")
+  end
+end, { silent = true, desc = "Move buffer left" })
 -- Temporarily disable some Pyright rules
 vim.keymap.set("n", "<leader>xh", function()
   require("lspconfig").pyright.setup({
