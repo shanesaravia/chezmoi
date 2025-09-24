@@ -12,6 +12,10 @@ end, { desc = "Toggle Zen Mode" })
 vim.keymap.set("n", "<leader>bs", function()
   Snacks.picker.buffers()
 end, { desc = "Search Buffers" })
+-- Buffer move next
+vim.keymap.set("n", "<leader>b>", "<cmd>BufferLineMoveNext<CR>", { desc = "Move buffer right" })
+-- Buffer move prev
+vim.keymap.set("n", "<leader>b<", "<cmd>BufferLineMovePrev<CR>", { desc = "Move buffer left" })
 -- Temporarily disable some Pyright rules
 vim.keymap.set("n", "<leader>xh", function()
   require("lspconfig").pyright.setup({
