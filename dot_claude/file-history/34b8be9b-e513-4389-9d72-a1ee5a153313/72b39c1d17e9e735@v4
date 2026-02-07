@@ -1,0 +1,41 @@
+export const DEFAULT_TOTAL_ROUNDS = 12;
+export const DEFAULT_ROUND_DURATION = 180; // 3 minutes in seconds
+export const DEFAULT_REST_DURATION = 60; // 1 minute in seconds
+
+export const MIN_ROUNDS = 1;
+export const MAX_ROUNDS = 20;
+export const MIN_ROUND_DURATION = 60; // 1 minute
+export const MAX_ROUND_DURATION = 300; // 5 minutes
+export const MIN_REST_DURATION = 30; // 30 seconds
+export const MAX_REST_DURATION = 120; // 2 minutes
+
+export const DEFAULT_WARNING_THRESHOLD = 30; // seconds before phase ends
+export const MIN_WARNING_THRESHOLD = 5;
+export const MAX_WARNING_THRESHOLD = 60; // 1 minute
+
+export const DEFAULT_COMBO_INTERVAL = 60; // seconds between combo prompts
+export const MIN_COMBO_INTERVAL = 5;
+export const MAX_COMBO_INTERVAL = 180; // 3 minutes
+
+export const COMBINATIONS = {
+  basic: ['Jab', 'Cross', 'Hook', 'Uppercut', 'Body Shot'],
+  numbered: ['1-2', '1-2-3', '1-2-1-2', '1-2-3-2'],
+  combos: [
+    'Jab-Cross',
+    'Jab-Cross-Hook',
+    'Jab-Body-Cross',
+    'Double Jab-Cross',
+    'Jab-Cross-Hook-Cross',
+    'Body-Head',
+    'Uppercut-Hook',
+    'Jab-Slip-Cross',
+  ],
+  defense: ['Slip Left', 'Slip Right', 'Roll', 'Block-Counter'],
+} as const;
+
+export const ALL_COMBINATIONS = [
+  ...COMBINATIONS.basic,
+  ...COMBINATIONS.numbered,
+  ...COMBINATIONS.combos,
+  ...COMBINATIONS.defense,
+];

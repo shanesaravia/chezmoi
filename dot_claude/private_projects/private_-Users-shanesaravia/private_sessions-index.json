@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sessionId": "875dce34-1ba4-401d-93e3-20657f058187",
+      "fullPath": "/Users/shanesaravia/.claude/projects/-Users-shanesaravia/875dce34-1ba4-401d-93e3-20657f058187.jsonl",
+      "fileMtime": 1769991634211,
+      "firstPrompt": "how can i create agent personas that are global for all my apps/directories instead of having a copy in each app directory?",
+      "summary": "Global Agent Personas for Multi-Project Development",
+      "messageCount": 13,
+      "created": "2026-01-31T15:55:37.400Z",
+      "modified": "2026-01-31T16:11:21.937Z",
+      "gitBranch": "",
+      "projectPath": "/Users/shanesaravia",
+      "isSidechain": false
+    }
+  ],
+  "originalPath": "/Users/shanesaravia"
+}

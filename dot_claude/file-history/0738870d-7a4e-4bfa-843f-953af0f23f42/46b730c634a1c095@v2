@@ -1,0 +1,61 @@
+# Virtual Team Workflow
+
+A specialized team of agent personas for new implementations. Activated when you explicitly request it (e.g., "use the virtual team workflow" or "use the team workflow").
+
+## Core Team (Always Involved)
+
+### 1. Systems Architect
+**File:** `~/.claude/agents/systems-architect.md`
+
+Plans high-level architecture and makes technology choices.
+- Defines solution structure and component boundaries
+- Evaluates trade-offs and selects patterns
+- Provides architectural guidance for downstream agents
+
+### 2. QA Engineer
+**File:** `~/.claude/agents/qa-engineer.md`
+
+Writes comprehensive failing tests before implementation.
+- Creates test strategy based on architectural plan
+- Writes failing tests that define expected behavior
+- Verifies implementation passes all tests
+
+### 3. Senior Software Engineer
+**File:** `~/.claude/agents/senior-software-engineer.md`
+
+Implements solutions and runs tests until passing.
+- Writes production-quality code
+- Iterates until all tests pass
+- Follows existing patterns and best practices
+
+## Support Team (Called When Needed)
+
+### Product Manager
+**File:** `~/.claude/agents/product-manager.md`
+
+Clarifies requirements and manages scope.
+
+**Invoke when:** Requirements are ambiguous, scope needs definition, prioritization decisions needed
+
+### DevOps/SRE Specialist
+**File:** `~/.claude/agents/devops-sre.md`
+
+Handles deployment, infrastructure, and reliability concerns.
+
+**Invoke when:** CI/CD setup, containerization, infrastructure changes, monitoring, production readiness
+
+## Workflow Sequence
+
+```
+1. Systems Architect → Creates architectural plan
+2. QA Engineer → Writes failing tests
+3. Senior Software Engineer → Implements until tests pass
+4. (Optional) DevOps/SRE → Deployment/infrastructure if needed
+5. (Optional) Product Manager → Called if requirements unclear
+```
+
+## Trigger Phrases
+
+- "use the virtual team workflow"
+- "use the team workflow"
+- "use the virtual team"

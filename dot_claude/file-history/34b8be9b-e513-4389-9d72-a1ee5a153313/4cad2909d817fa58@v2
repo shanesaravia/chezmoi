@@ -1,0 +1,27 @@
+import { clsx } from 'clsx';
+import { useTimerContext } from '../context/TimerContext';
+import { formatTime } from '../utils/formatTime';
+import { WARNING_THRESHOLD } from '../utils/constants';
+
+export function TimeDisplay() {
+  const { state } = useTimerContext();
+
+  const isWarning = state.timeRemaining <= WARNING_THRESHOLD && state.status === 'running';
+
+  return (
+    <div
+      className={clsx(
+        'font-mono text-8xl sm:text-9xl font-bold tracking-tight transition-all duration-300',
+        {
+          'text-green-500': state.phase === 'round' && state.status === 'running' && !isWarning,
+          'text-blue-500': state.phase === 'rest' && state.status === 'running' && !isWarning,
+          'text-amber-500': state.status === 'paused',
+          'text-gray-400 dark:text-gray-500': state.status === 'idle',
+          'text-red-500 animate-pulse': isWarning,
+        }
+      )}
+    >
+      {formatTime(state.timeRemaining)}
+    </div>
+  );
+}

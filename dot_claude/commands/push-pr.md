@@ -1,0 +1,26 @@
+---
+allowed-tools: Bash(git checkout:*), Bash(git add:*), Bash(git status:*), Bash(git push:*), Bash(git commit:*), Bash(git diff:*), Bash(git branch:*), Bash(gh pr create:*)
+description: Create a new branch, commit changes, push, and open a PR
+---
+
+## Context
+
+- Current git status: !`git status`
+- Current git diff (staged and unstaged changes): !`git diff HEAD`
+- Current branch: !`git branch --show-current`
+- Default branch: main
+
+## Your task
+
+Based on the changes shown above, perform these steps:
+
+1. **Analyze the changes** to understand what was modified/added
+2. **Create a new branch** with a descriptive name based on the changes (e.g., `feat/add-user-authentication`, `fix/resolve-null-pointer-error`, `refactor/simplify-api-handlers`). Use kebab-case with a prefix like `feat/`, `fix/`, `refactor/`, `docs/`, `chore/` as appropriate.
+3. **Stage all changes** with `git add -A`
+4. **Create a commit** with a clear, descriptive message that explains what the changes do
+5. **Push the branch** to origin with `-u` flag
+6. **Create a pull request** using `gh pr create` targeting the default branch (main or master). Include:
+   - A concise title summarizing the changes
+   - A body with a summary section describing what changed and why
+
+Execute all steps in a single response. Do not ask for confirmation or provide additional commentary - just execute the git commands.

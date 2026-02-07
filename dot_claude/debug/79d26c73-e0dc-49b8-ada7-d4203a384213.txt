@@ -1,0 +1,167 @@
+2026-01-31T15:52:58.550Z [ERROR] Failed to save config with lock: Error: ENOENT: no such file or directory, lstat '/Users/shanesaravia/.claude.json'
+2026-01-31T15:52:58.550Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778550
+2026-01-31T15:52:58.550Z [DEBUG] Setting permissions for new file: 600
+2026-01-31T15:52:58.551Z [DEBUG] Temp file written successfully, size: 82 bytes
+2026-01-31T15:52:58.551Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778550 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.551Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.572Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778572
+2026-01-31T15:52:58.572Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.572Z [DEBUG] Temp file written successfully, size: 130 bytes
+2026-01-31T15:52:58.572Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.572Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778572 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.572Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.572Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-31T15:52:58.572Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-31T15:52:58.572Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-31T15:52:58.572Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-31T15:52:58.573Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778573
+2026-01-31T15:52:58.573Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.573Z [DEBUG] Temp file written successfully, size: 167 bytes
+2026-01-31T15:52:58.573Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.573Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778573 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.573Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.574Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778574
+2026-01-31T15:52:58.574Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.574Z [DEBUG] Temp file written successfully, size: 202 bytes
+2026-01-31T15:52:58.574Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.574Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778574 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.574Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.575Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778575
+2026-01-31T15:52:58.575Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.575Z [DEBUG] Temp file written successfully, size: 238 bytes
+2026-01-31T15:52:58.575Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.575Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778575 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.575Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.575Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778575
+2026-01-31T15:52:58.575Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.576Z [DEBUG] Temp file written successfully, size: 275 bytes
+2026-01-31T15:52:58.576Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.576Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778575 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.576Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.577Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/shanesaravia/.claude/skills, project=[]
+2026-01-31T15:52:58.578Z [DEBUG] Error log sink initialized
+2026-01-31T15:52:58.584Z [DEBUG] [render] initLayout starting
+2026-01-31T15:52:58.584Z [DEBUG] Layout engine: yoga
+2026-01-31T15:52:58.584Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-31T15:52:58.585Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-31T15:52:58.585Z [DEBUG] Total plugin skills loaded: 0
+2026-01-31T15:52:58.585Z [DEBUG] Total plugin commands loaded: 0
+2026-01-31T15:52:58.585Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-31T15:52:58.586Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-31T15:52:58.586Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 1 bundled skills
+2026-01-31T15:52:58.587Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default
+2026-01-31T15:52:58.589Z [DEBUG] [render] initLayout complete
+2026-01-31T15:52:58.591Z [DEBUG] [render] first ink render: 386ms since process start
+2026-01-31T15:52:58.611Z [DEBUG] Install: Starting installation process (force=false, target=undefined)
+2026-01-31T15:52:58.611Z [DEBUG] Install: Calling installLatest(channelOrVersion=latest, forceReinstall=false)
+2026-01-31T15:52:58.614Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-31T15:52:58.614Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778614
+2026-01-31T15:52:58.614Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.615Z [DEBUG] Temp file written successfully, size: 318 bytes
+2026-01-31T15:52:58.615Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.615Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778614 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.615Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.653Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778653
+2026-01-31T15:52:58.653Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.653Z [DEBUG] Temp file written successfully, size: 359 bytes
+2026-01-31T15:52:58.653Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.653Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778653 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.654Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.736Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778736
+2026-01-31T15:52:58.736Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.736Z [DEBUG] Temp file written successfully, size: 535 bytes
+2026-01-31T15:52:58.736Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.736Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778736 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.736Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.737Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778737
+2026-01-31T15:52:58.737Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.737Z [DEBUG] Temp file written successfully, size: 571 bytes
+2026-01-31T15:52:58.737Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.737Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778737 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.737Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.738Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778738
+2026-01-31T15:52:58.738Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.738Z [DEBUG] Temp file written successfully, size: 599 bytes
+2026-01-31T15:52:58.738Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.738Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778738 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.738Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.738Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778738
+2026-01-31T15:52:58.738Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.739Z [DEBUG] Temp file written successfully, size: 632 bytes
+2026-01-31T15:52:58.739Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.739Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778738 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.739Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.739Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778739
+2026-01-31T15:52:58.739Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.739Z [DEBUG] Temp file written successfully, size: 671 bytes
+2026-01-31T15:52:58.739Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.739Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778739 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.740Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.740Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778740
+2026-01-31T15:52:58.741Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.741Z [DEBUG] Temp file written successfully, size: 710 bytes
+2026-01-31T15:52:58.741Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.741Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778740 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.741Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.742Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778742
+2026-01-31T15:52:58.742Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.742Z [DEBUG] Temp file written successfully, size: 748 bytes
+2026-01-31T15:52:58.742Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.742Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778742 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.742Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.743Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778743
+2026-01-31T15:52:58.743Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.743Z [DEBUG] Temp file written successfully, size: 780 bytes
+2026-01-31T15:52:58.743Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.743Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778743 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.743Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.744Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778744
+2026-01-31T15:52:58.744Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.744Z [DEBUG] Temp file written successfully, size: 810 bytes
+2026-01-31T15:52:58.744Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.744Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778744 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.744Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.745Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778745
+2026-01-31T15:52:58.745Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.745Z [DEBUG] Temp file written successfully, size: 843 bytes
+2026-01-31T15:52:58.745Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.745Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778745 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.745Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.746Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778746
+2026-01-31T15:52:58.746Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.746Z [DEBUG] Temp file written successfully, size: 895 bytes
+2026-01-31T15:52:58.746Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.746Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778746 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.746Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.746Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874778746
+2026-01-31T15:52:58.746Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:52:58.747Z [DEBUG] Temp file written successfully, size: 925 bytes
+2026-01-31T15:52:58.747Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:52:58.747Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874778746 to /Users/shanesaravia/.claude.json
+2026-01-31T15:52:58.747Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:52:58.762Z [DEBUG] Checking for native installer update to version 2.1.27
+2026-01-31T15:52:58.764Z [DEBUG] Downloading native installer version 2.1.27
+2026-01-31T15:53:01.714Z [DEBUG] Atomically installed binary to /Users/shanesaravia/.local/share/claude/versions/2.1.27
+2026-01-31T15:53:01.718Z [DEBUG] Could not remove empty directory at /Users/shanesaravia/.local/bin/claude: Error: ENOENT: no such file or directory, stat '/Users/shanesaravia/.local/bin/claude'
+2026-01-31T15:53:01.718Z [DEBUG] Created directory /Users/shanesaravia/.local/bin for symlink
+2026-01-31T15:53:01.718Z [DEBUG] Atomically updated symlink /Users/shanesaravia/.local/bin/claude -> /Users/shanesaravia/.local/share/claude/versions/2.1.27
+2026-01-31T15:53:01.719Z [DEBUG] Successfully updated to version 2.1.27
+2026-01-31T15:53:01.719Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874781719
+2026-01-31T15:53:01.719Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:53:01.719Z [DEBUG] Temp file written successfully, size: 1019 bytes
+2026-01-31T15:53:01.719Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:53:01.719Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874781719 to /Users/shanesaravia/.claude.json
+2026-01-31T15:53:01.720Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:53:01.720Z [DEBUG] Native installer: Set installMethod to "native" and disabled legacy auto-updater for protection
+2026-01-31T15:53:01.720Z [DEBUG] Install: installLatest returned version=2.1.27, wasUpdated=true, lockFailed=false
+2026-01-31T15:53:01.723Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.78502.1769874781723
+2026-01-31T15:53:01.723Z [DEBUG] Preserving file permissions: 100600
+2026-01-31T15:53:01.723Z [DEBUG] Temp file written successfully, size: 1064 bytes
+2026-01-31T15:53:01.723Z [DEBUG] Applied original permissions to temp file
+2026-01-31T15:53:01.723Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.78502.1769874781723 to /Users/shanesaravia/.claude.json
+2026-01-31T15:53:01.723Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-01-31T15:53:01.723Z [DEBUG] Install: Setup launcher completed with 0 messages
+2026-01-31T15:53:01.723Z [DEBUG] Install: Cleaning up npm installations after successful install
+2026-01-31T15:53:02.218Z [DEBUG] Removed global npm installation of @anthropic-ai/claude-code
+2026-01-31T15:53:02.218Z [DEBUG] Cleaned up 1 npm installation(s)
+2026-01-31T15:53:02.220Z [DEBUG] Install: Shell PATH already configured

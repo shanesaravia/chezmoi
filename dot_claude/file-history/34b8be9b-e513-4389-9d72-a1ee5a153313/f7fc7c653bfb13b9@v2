@@ -1,0 +1,108 @@
+import { useCallback, useRef, useEffect } from 'react';
+import { useTimerContext } from '../context/TimerContext';
+import { WARNING_THRESHOLD } from '../utils/constants';
+
+// Create audio context for generating sounds
+function createBellSound(audioContext: AudioContext, volume: number): void {
+  const oscillator = audioContext.createOscillator();
+  const gainNode = audioContext.createGain();
+
+  oscillator.connect(gainNode);
+  gainNode.connect(audioContext.destination);
+
+  oscillator.frequency.value = 800;
+  oscillator.type = 'sine';
+
+  gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
+  gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.8);
+
+  oscillator.start(audioContext.currentTime);
+  oscillator.stop(audioContext.currentTime + 0.8);
+}
+
+function createWarningBeep(audioContext: AudioContext, volume: number): void {
+  const oscillator = audioContext.createOscillator();
+  const gainNode = audioContext.createGain();
+
+  oscillator.connect(gainNode);
+  gainNode.connect(audioContext.destination);
+
+  oscillator.frequency.value = 440;
+  oscillator.type = 'square';
+
+  gainNode.gain.setValueAtTime(volume * 0.5, audioContext.currentTime);
+  gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.15);
+
+  oscillator.start(audioContext.currentTime);
+  oscillator.stop(audioContext.currentTime + 0.15);
+}
+
+export function useSound() {
+  const { state, settings, dispatch } = useTimerContext();
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const prevPhaseRef = useRef(state.phase);
+  const prevTimeRef = useRef(state.timeRemaining);
+
+  const getAudioContext = useCallback(() => {
+    if (!audioContextRef.current) {
+      audioContextRef.current = new AudioContext();
+    }
+    return audioContextRef.current;
+  }, []);
+
+  const playBell = useCallback(() => {
+    const ctx = getAudioContext();
+    // Play bell sound twice for round end
+    createBellSound(ctx, settings.volume);
+    setTimeout(() => createBellSound(ctx, settings.volume), 300);
+  }, [getAudioContext, settings.volume]);
+
+  const playWarning = useCallback(() => {
+    const ctx = getAudioContext();
+    createWarningBeep(ctx, settings.volume);
+  }, [getAudioContext, settings.volume]);
+
+  // Handle phase transitions
+  useEffect(() => {
+    if (state.status !== 'running') return;
+
+    // Phase changed - play bell
+    if (prevPhaseRef.current !== state.phase) {
+      playBell();
+      prevPhaseRef.current = state.phase;
+    }
+
+    // Check for warning threshold
+    if (
+      state.timeRemaining === WARNING_THRESHOLD &&
+      prevTimeRef.current !== WARNING_THRESHOLD &&
+      !state.warningPlayed
+    ) {
+      playWarning();
+      dispatch({ type: 'SET_WARNING_PLAYED', payload: true });
+    }
+
+    prevTimeRef.current = state.timeRemaining;
+  }, [state, playBell, playWarning, dispatch]);
+
+  // Play bell when workout starts
+  useEffect(() => {
+    if (state.status === 'running' && state.currentRound === 1 && state.phase === 'round') {
+      // Only play on initial start
+      if (state.timeRemaining === state.roundDuration) {
+        playBell();
+      }
+    }
+  }, [state.status, state.currentRound, state.phase, state.timeRemaining, state.roundDuration, playBell]);
+
+  // Cleanup
+  useEffect(() => {
+    return () => {
+      if (audioContextRef.current) {
+        audioContextRef.current.close();
+      }
+    };
+  }, []);
+
+  return { playBell, playWarning };
+}

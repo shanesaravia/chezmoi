@@ -1,0 +1,412 @@
+2026-02-05T04:51:00.361Z [DEBUG] [init] configureGlobalMTLS starting
+2026-02-05T04:51:00.361Z [DEBUG] [init] configureGlobalMTLS complete
+2026-02-05T04:51:00.361Z [DEBUG] [init] configureGlobalAgents starting
+2026-02-05T04:51:00.361Z [DEBUG] [init] configureGlobalAgents complete
+2026-02-05T04:51:00.365Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(npm run test:run:*)"]
+2026-02-05T04:51:00.365Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-02-05T04:51:00.366Z [DEBUG] [ToolSearch:optimistic] mode=tst-auto, ENABLE_TOOL_SEARCH=undefined, result=true
+2026-02-05T04:51:00.366Z [DEBUG] [STARTUP] Running setup()...
+2026-02-05T04:51:00.366Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-05T04:51:00.367Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/shanesaravia/.claude/skills, project=[]
+2026-02-05T04:51:00.367Z [DEBUG] Error log sink initialized
+2026-02-05T04:51:00.369Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-05T04:51:00.369Z [DEBUG] Total plugin skills loaded: 0
+2026-02-05T04:51:00.369Z [DEBUG] Total plugin commands loaded: 0
+2026-02-05T04:51:00.369Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-05T04:51:00.369Z [DEBUG] [STARTUP] setup() completed in 3ms
+2026-02-05T04:51:00.369Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-02-05T04:51:00.371Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default
+2026-02-05T04:51:00.371Z [DEBUG] Acquired PID lock for 2.1.31 (PID 60224)
+2026-02-05T04:51:00.371Z [DEBUG] Acquired PID lock on running version: /Users/shanesaravia/.local/share/claude/versions/2.1.31
+2026-02-05T04:51:00.389Z [DEBUG] Loaded 1 unique skills (managed: 0, user: 0, project: 0, legacy commands: 1)
+2026-02-05T04:51:00.390Z [DEBUG] getSkills returning: 1 skill dir commands, 0 plugin skills, 2 bundled skills
+2026-02-05T04:51:00.390Z [DEBUG] Agent file /Users/shanesaravia/.claude/agents/qa-engineer.md is missing required 'name' in frontmatter
+2026-02-05T04:51:00.390Z [DEBUG] Failed to parse agent from /Users/shanesaravia/.claude/agents/qa-engineer.md: Missing required "name" field in frontmatter
+2026-02-05T04:51:00.390Z [DEBUG] Agent file /Users/shanesaravia/.claude/agents/senior-software-engineer.md is missing required 'name' in frontmatter
+2026-02-05T04:51:00.390Z [DEBUG] Failed to parse agent from /Users/shanesaravia/.claude/agents/senior-software-engineer.md: Missing required "name" field in frontmatter
+2026-02-05T04:51:00.390Z [DEBUG] Agent file /Users/shanesaravia/.claude/agents/systems-architect.md is missing required 'name' in frontmatter
+2026-02-05T04:51:00.390Z [DEBUG] Failed to parse agent from /Users/shanesaravia/.claude/agents/systems-architect.md: Missing required "name" field in frontmatter
+2026-02-05T04:51:00.391Z [DEBUG] Agent file /Users/shanesaravia/.claude/agents/product-manager.md is missing required 'name' in frontmatter
+2026-02-05T04:51:00.391Z [DEBUG] Failed to parse agent from /Users/shanesaravia/.claude/agents/product-manager.md: Missing required "name" field in frontmatter
+2026-02-05T04:51:00.391Z [DEBUG] Agent file /Users/shanesaravia/.claude/agents/devops-sre.md is missing required 'name' in frontmatter
+2026-02-05T04:51:00.391Z [DEBUG] Failed to parse agent from /Users/shanesaravia/.claude/agents/devops-sre.md: Missing required "name" field in frontmatter
+2026-02-05T04:51:00.391Z [DEBUG] Total plugin agents loaded: 0
+2026-02-05T04:51:00.391Z [DEBUG] [STARTUP] Commands and agents loaded in 22ms
+2026-02-05T04:51:00.391Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-02-05T04:51:00.391Z [DEBUG] [render] initLayout starting
+2026-02-05T04:51:00.391Z [DEBUG] Layout engine: yoga
+2026-02-05T04:51:00.392Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-02-05T04:51:00.394Z [DEBUG] [render] initLayout complete
+2026-02-05T04:51:00.397Z [DEBUG] [keybindings] KeybindingSetup initialized with 100 bindings, 0 warnings
+2026-02-05T04:51:00.413Z [DEBUG] [render] first ink render: 360ms since process start
+2026-02-05T04:51:00.413Z [DEBUG] [keybindings] Watching for changes to /Users/shanesaravia/.claude/keybindings.json
+2026-02-05T04:51:03.199Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267063199
+2026-02-05T04:51:03.199Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:03.199Z [DEBUG] Temp file written successfully, size: 9533 bytes
+2026-02-05T04:51:03.199Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:03.199Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267063199 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:03.199Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:03.212Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-02-05T04:51:03.213Z [DEBUG] Grove: Using fresh cached config
+2026-02-05T04:51:03.213Z [DEBUG] [render] initLayout starting
+2026-02-05T04:51:03.214Z [DEBUG] [render] initLayout complete
+2026-02-05T04:51:03.215Z [DEBUG] [keybindings] KeybindingSetup initialized with 100 bindings, 0 warnings
+2026-02-05T04:51:03.221Z [DEBUG] [render] first ink render: 3168ms since process start
+2026-02-05T04:51:03.222Z [DEBUG] Git remote URL: git@github.com:shanesaravia/boxing-rounds.git
+2026-02-05T04:51:03.222Z [DEBUG] Parsed repository: shanesaravia/boxing-rounds from git@github.com:shanesaravia/boxing-rounds.git
+2026-02-05T04:51:03.222Z [DEBUG] Parsed repository: shanesaravia/boxing-rounds from URL: git@github.com:shanesaravia/boxing-rounds.git
+2026-02-05T04:51:03.222Z [DEBUG] Path /Users/shanesaravia/Development/boxing-rounds already tracked for repo shanesaravia/boxing-rounds
+2026-02-05T04:51:03.771Z [DEBUG] [STARTUP] showSetupScreens() completed in 3380ms
+2026-02-05T04:51:03.771Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-02-05T04:51:03.771Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-02-05T04:51:03.771Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-02-05T04:51:03.771Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:03.771Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:03.772Z [DEBUG] Total LSP servers loaded: 0
+2026-02-05T04:51:03.772Z [DEBUG] [STARTUP] MCP configs loaded in 3407ms
+2026-02-05T04:51:03.774Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-02-05T04:51:03.775Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267063775
+2026-02-05T04:51:03.776Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:03.776Z [DEBUG] Temp file written successfully, size: 9533 bytes
+2026-02-05T04:51:03.776Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:03.776Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267063775 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:03.776Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:03.776Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-02-05T04:51:03.776Z [DEBUG] LSP manager initialized with 0 servers
+2026-02-05T04:51:03.776Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-02-05T04:51:03.776Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:03.776Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-02-05T04:51:03.776Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-02-05T04:51:03.776Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-02-05T04:51:03.777Z [DEBUG] LSP server manager initialized successfully
+2026-02-05T04:51:03.777Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-02-05T04:51:03.777Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:03.779Z [DEBUG] [render] initLayout starting
+2026-02-05T04:51:03.779Z [DEBUG] [render] initLayout complete
+2026-02-05T04:51:03.786Z [DEBUG] [keybindings] KeybindingSetup initialized with 100 bindings, 0 warnings
+2026-02-05T04:51:03.802Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-02-05T04:51:03.802Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-02-05T04:51:03.803Z [DEBUG] performStartupChecks called
+2026-02-05T04:51:03.803Z [DEBUG] Starting background plugin installations
+2026-02-05T04:51:03.803Z [DEBUG] performBackgroundPluginInstallations called
+2026-02-05T04:51:03.804Z [DEBUG] [render] first ink render: 3752ms since process start
+2026-02-05T04:51:04.036Z [DEBUG] Watching for changes in setting files /Users/shanesaravia/Development/boxing-rounds/.claude/settings.json, /Users/shanesaravia/Development/boxing-rounds/.claude/settings.local.json...
+2026-02-05T04:51:04.037Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-02-05T04:51:04.037Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-02-05T04:51:04.037Z [DEBUG] [claudeai-mcp] Fetching from https://api.anthropic.com/v1/mcp_servers?limit=1000
+2026-02-05T04:51:04.039Z [DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+2026-02-05T04:51:04.039Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-02-05T04:51:04.039Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-02-05T04:51:04.057Z [DEBUG] Watching for changes in skill/command directories: /Users/shanesaravia/.claude/commands...
+2026-02-05T04:51:04.058Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267064058
+2026-02-05T04:51:04.058Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:04.058Z [DEBUG] Temp file written successfully, size: 9533 bytes
+2026-02-05T04:51:04.058Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:04.058Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267064058 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:04.059Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:04.203Z [DEBUG] Checking for native installer update to version 2.1.31
+2026-02-05T04:51:04.204Z [DEBUG] [claudeai-mcp] Fetched 0 servers
+2026-02-05T04:51:04.204Z [DEBUG] Found 2.1.31 at /Users/shanesaravia/.local/bin/claude, skipping install
+2026-02-05T04:51:04.316Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:04.316Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:04.316Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:04.468Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/shanesaravia/.local/share/claude/versions/2.1.31)
+2026-02-05T04:51:07.973Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267067973
+2026-02-05T04:51:07.973Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:07.973Z [DEBUG] Temp file written successfully, size: 9636 bytes
+2026-02-05T04:51:07.973Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:07.973Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267067973 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:07.974Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:07.991Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-05T04:51:07.991Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude/todos/f716d85c-c05a-4b88-87ed-4d47c5752205-agent-f716d85c-c05a-4b88-87ed-4d47c5752205.json.tmp.60224.1770267067991
+2026-02-05T04:51:07.992Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-02-05T04:51:07.992Z [DEBUG] Renaming /Users/shanesaravia/.claude/todos/f716d85c-c05a-4b88-87ed-4d47c5752205-agent-f716d85c-c05a-4b88-87ed-4d47c5752205.json.tmp.60224.1770267067991 to /Users/shanesaravia/.claude/todos/f716d85c-c05a-4b88-87ed-4d47c5752205-agent-f716d85c-c05a-4b88-87ed-4d47c5752205.json
+2026-02-05T04:51:07.992Z [DEBUG] File /Users/shanesaravia/.claude/todos/f716d85c-c05a-4b88-87ed-4d47c5752205-agent-f716d85c-c05a-4b88-87ed-4d47c5752205.json written atomically
+2026-02-05T04:51:07.995Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-02-05T04:51:08.007Z [DEBUG] Stats cache is up to date
+2026-02-05T04:51:08.008Z [DEBUG] tree-sitter: loaded from embedded
+2026-02-05T04:51:08.014Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2026-02-05T04:51:08.014Z [DEBUG] Looking for shell config file: /Users/shanesaravia/.zshrc
+2026-02-05T04:51:08.014Z [DEBUG] Snapshots directory: /Users/shanesaravia/.claude/shell-snapshots
+2026-02-05T04:51:08.014Z [DEBUG] Creating snapshot at: /Users/shanesaravia/.claude/shell-snapshots/snapshot-zsh-1770267068014-ycf74a.sh
+2026-02-05T04:51:08.014Z [DEBUG] Shell binary exists: true
+2026-02-05T04:51:08.014Z [DEBUG] Execution timeout: 10000ms
+2026-02-05T04:51:08.017Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-05T04:51:08.018Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.849; cc_entrypoint=cli;
+2026-02-05T04:51:08.019Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:08.019Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:08.019Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:08.116Z [DEBUG] Checking for native installer update to version 2.1.31
+2026-02-05T04:51:08.117Z [DEBUG] Found 2.1.31 at /Users/shanesaravia/.local/bin/claude, skipping install
+2026-02-05T04:51:08.718Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-02-05T04:51:08.718Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-02-05T04:51:09.551Z [DEBUG] Shell snapshot created successfully (175143 bytes)
+2026-02-05T04:51:09.551Z [DEBUG] No session environment scripts found
+2026-02-05T04:51:09.675Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:09.740Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-05T04:51:09.741Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.8ed; cc_entrypoint=cli;
+2026-02-05T04:51:09.741Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:09.741Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:09.741Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:09.791Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "git symbolic-ref:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-02-05T04:51:09.791Z [DEBUG] Bash command permission check failed for command in /push-pr: git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's@^refs/remotes/origin/@@' || echo "main". Error: This Bash command contains multiple operations. The following parts require approval: git symbolic-ref refs/remotes/origin/HEAD, sed 's@^refs/remotes/origin/@@' || echo "main"
+2026-02-05T04:51:09.792Z [DEBUG] FileHistory: Added snapshot for 423d16ae-64c2-4d65-b9cf-322609f83051, tracking 0 files
+2026-02-05T04:51:09.803Z [DEBUG] High write ratio: blit=0, write=1050 (100.0% writes), screen=27x93
+2026-02-05T04:51:09.805Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-05T04:51:09.806Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.20d; cc_entrypoint=cli;
+2026-02-05T04:51:09.806Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:09.806Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:09.806Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:09.817Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267069817
+2026-02-05T04:51:09.817Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:09.817Z [DEBUG] Temp file written successfully, size: 9659 bytes
+2026-02-05T04:51:09.817Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:09.817Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267069817 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:09.817Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:09.819Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267069819
+2026-02-05T04:51:09.819Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:09.819Z [DEBUG] Temp file written successfully, size: 9690 bytes
+2026-02-05T04:51:09.819Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:09.819Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267069819 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:09.819Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:09.824Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-05T04:51:09.845Z [DEBUG] High write ratio: blit=0, write=1036 (100.0% writes), screen=25x93
+2026-02-05T04:51:09.854Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-05T04:51:09.854Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.d45; cc_entrypoint=cli;
+2026-02-05T04:51:09.854Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:09.854Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:09.855Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:09.950Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-05T04:51:09.950Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.ba9; cc_entrypoint=cli;
+2026-02-05T04:51:09.950Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:09.950Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:09.950Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:10.247Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:10.345Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:10.394Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:10.780Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:27.361Z [DEBUG] Full reset (shrink->below): prevHeight=25, nextHeight=24, viewport=24
+2026-02-05T04:51:33.598Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-05T04:51:33.598Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-05T04:51:33.599Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-05T04:51:33.599Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-05T04:51:33.601Z [DEBUG] Sending 2 skills via attachment (initial, 2 total sent)
+2026-02-05T04:51:33.605Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-05T04:51:33.605Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:33.605Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-05T04:51:33.605Z [DEBUG] FileHistory: Making snapshot for message 3aa888b6-05aa-40ba-a809-78f042f452fb
+2026-02-05T04:51:33.605Z [DEBUG] FileHistory: Added snapshot for 3aa888b6-05aa-40ba-a809-78f042f452fb, tracking 0 files
+2026-02-05T04:51:33.613Z [DEBUG] High write ratio: blit=0, write=1183 (100.0% writes), screen=30x93
+2026-02-05T04:51:33.617Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-05T04:51:33.622Z [DEBUG] Tool search disabled for model 'claude-haiku-4-5-20251001': model does not support tool_reference blocks. This feature is only available on Claude Sonnet 4+, Opus 4+, and newer models.
+2026-02-05T04:51:33.628Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.f9a; cc_entrypoint=cli;
+2026-02-05T04:51:33.629Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:33.629Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:33.629Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:33.629Z [DEBUG] Total plugin output styles loaded: 0
+2026-02-05T04:51:33.632Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-05T04:51:33.635Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.593; cc_entrypoint=cli;
+2026-02-05T04:51:33.636Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:33.636Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:33.636Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:33.720Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267093720
+2026-02-05T04:51:33.720Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:51:33.721Z [DEBUG] Temp file written successfully, size: 9690 bytes
+2026-02-05T04:51:33.721Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:51:33.721Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267093720 to /Users/shanesaravia/.claude.json
+2026-02-05T04:51:33.721Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:51:34.150Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:35.184Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:35.965Z [DEBUG] High write ratio: blit=0, write=1193 (100.0% writes), screen=30x93
+2026-02-05T04:51:36.724Z [DEBUG] High write ratio: blit=0, write=1310 (100.0% writes), screen=34x93
+2026-02-05T04:51:37.306Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-02-05T04:51:37.306Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-02-05T04:51:37.306Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:37.306Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-02-05T04:51:37.308Z [DEBUG] Permission suggestions for Glob: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/shanesaravia/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2026-02-05T04:51:37.308Z [DEBUG] executePermissionRequestHooks called for tool: Glob
+2026-02-05T04:51:37.308Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Glob
+2026-02-05T04:51:37.308Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:37.308Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-02-05T04:51:37.316Z [DEBUG] High write ratio: blit=0, write=1271 (100.0% writes), screen=38x93
+2026-02-05T04:51:37.316Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-05T04:51:37.362Z [DEBUG] High write ratio: blit=0, write=1271 (100.0% writes), screen=38x93
+2026-02-05T04:51:39.765Z [DEBUG] High write ratio: blit=0, write=1304 (100.0% writes), screen=34x93
+2026-02-05T04:51:39.768Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-05T04:51:39.769Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-02-05T04:51:39.869Z [DEBUG] Checking for native installer update to version 2.1.31
+2026-02-05T04:51:39.869Z [DEBUG] Found 2.1.31 at /Users/shanesaravia/.local/bin/claude, skipping install
+2026-02-05T04:51:40.283Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-02-05T04:51:40.283Z [DEBUG] Found 5 hook matchers in settings
+2026-02-05T04:51:40.283Z [DEBUG] Matched 1 unique hooks for query "Glob" (1 before deduplication)
+2026-02-05T04:51:40.285Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-05T04:51:40.285Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-05T04:51:40.285Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-05T04:51:40.285Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-05T04:51:40.286Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-05T04:51:40.289Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.593; cc_entrypoint=cli;
+2026-02-05T04:51:40.290Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:40.290Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:40.290Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:40.297Z [DEBUG] High write ratio: blit=0, write=1304 (100.0% writes), screen=34x93
+2026-02-05T04:51:42.040Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:42.550Z [DEBUG] High write ratio: blit=0, write=1330 (100.0% writes), screen=34x93
+2026-02-05T04:51:42.959Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-05T04:51:42.959Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-05T04:51:42.959Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:42.959Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-05T04:51:42.960Z [DEBUG] Permission suggestions for Read: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/shanesaravia/.claude/commands/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "session"
+  }
+]
+2026-02-05T04:51:42.960Z [DEBUG] executePermissionRequestHooks called for tool: Read
+2026-02-05T04:51:42.960Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Read
+2026-02-05T04:51:42.960Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:42.960Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-05T04:51:42.966Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-05T04:51:42.987Z [DEBUG] High write ratio: blit=0, write=1273 (100.0% writes), screen=38x93
+2026-02-05T04:51:43.028Z [DEBUG] High write ratio: blit=0, write=1273 (100.0% writes), screen=38x93
+2026-02-05T04:51:45.828Z [DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'session': ["Read(//Users/shanesaravia/.claude/commands/**)"]
+2026-02-05T04:51:45.831Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-05T04:51:45.831Z [DEBUG] Found 5 hook matchers in settings
+2026-02-05T04:51:45.831Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2026-02-05T04:51:45.831Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-05T04:51:45.831Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-05T04:51:45.831Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-05T04:51:45.831Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-05T04:51:45.832Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-05T04:51:45.833Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.593; cc_entrypoint=cli;
+2026-02-05T04:51:45.834Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:51:45.834Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:51:45.834Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:51:45.842Z [DEBUG] High write ratio: blit=0, write=1315 (100.0% writes), screen=34x93
+2026-02-05T04:51:45.844Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-05T04:51:45.845Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-02-05T04:51:45.950Z [DEBUG] Checking for native installer update to version 2.1.31
+2026-02-05T04:51:45.951Z [DEBUG] Found 2.1.31 at /Users/shanesaravia/.local/bin/claude, skipping install
+2026-02-05T04:51:47.358Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:51:55.316Z [DEBUG] High write ratio: blit=0, write=1325 (100.0% writes), screen=34x93
+2026-02-05T04:51:57.211Z [DEBUG] High write ratio: blit=0, write=1720 (100.0% writes), screen=41x93
+2026-02-05T04:51:58.239Z [DEBUG] executePreToolHooks called for tool: Edit
+2026-02-05T04:51:58.239Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2026-02-05T04:51:58.239Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:58.239Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-02-05T04:51:58.241Z [DEBUG] executePermissionRequestHooks called for tool: Edit
+2026-02-05T04:51:58.241Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Edit
+2026-02-05T04:51:58.241Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:51:58.241Z [DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+2026-02-05T04:51:58.259Z [DEBUG] High write ratio: blit=0, write=2383 (100.0% writes), screen=56x93
+2026-02-05T04:51:58.260Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-05T04:51:58.279Z [DEBUG] High write ratio: blit=0, write=2383 (100.0% writes), screen=56x93
+2026-02-05T04:52:04.263Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-02-05T04:52:04.263Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:52:04.263Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-02-05T04:52:22.740Z [DEBUG] FileHistory: Tracked file modification for /Users/shanesaravia/.claude/commands/push-pr.md
+2026-02-05T04:52:22.741Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude/commands/push-pr.md.tmp.60224.1770267142741
+2026-02-05T04:52:22.741Z [DEBUG] Preserving file permissions: 100644
+2026-02-05T04:52:22.742Z [DEBUG] Temp file written successfully, size: 1384 bytes
+2026-02-05T04:52:22.742Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:52:22.742Z [DEBUG] Renaming /Users/shanesaravia/.claude/commands/push-pr.md.tmp.60224.1770267142741 to /Users/shanesaravia/.claude/commands/push-pr.md
+2026-02-05T04:52:22.742Z [DEBUG] File /Users/shanesaravia/.claude/commands/push-pr.md written atomically
+2026-02-05T04:52:22.743Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2026-02-05T04:52:22.743Z [DEBUG] Found 5 hook matchers in settings
+2026-02-05T04:52:22.743Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2026-02-05T04:52:22.745Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-05T04:52:22.745Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-05T04:52:22.745Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-05T04:52:22.745Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-05T04:52:22.747Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-05T04:52:22.749Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.593; cc_entrypoint=cli;
+2026-02-05T04:52:22.750Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:52:22.750Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:52:22.750Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:52:22.772Z [DEBUG] High write ratio: blit=0, write=2209 (100.0% writes), screen=53x93
+2026-02-05T04:52:22.776Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .md
+2026-02-05T04:52:22.778Z [DEBUG] Started caffeinate to prevent sleep
+2026-02-05T04:52:22.782Z [DEBUG] AutoUpdaterWrapper: Installation type: native
+2026-02-05T04:52:22.892Z [DEBUG] Checking for native installer update to version 2.1.31
+2026-02-05T04:52:22.893Z [DEBUG] Found 2.1.31 at /Users/shanesaravia/.local/bin/claude, skipping install
+2026-02-05T04:52:24.277Z [DEBUG] Detected skill change: /Users/shanesaravia/.claude/commands/push-pr.md
+2026-02-05T04:52:24.277Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/shanesaravia/.claude/skills, project=[]
+2026-02-05T04:52:24.278Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-05T04:52:24.278Z [DEBUG] Total plugin skills loaded: 0
+2026-02-05T04:52:24.278Z [DEBUG] Total plugin commands loaded: 0
+2026-02-05T04:52:24.282Z [DEBUG] Loaded 1 unique skills (managed: 0, user: 0, project: 0, legacy commands: 1)
+2026-02-05T04:52:24.282Z [DEBUG] getSkills returning: 1 skill dir commands, 0 plugin skills, 2 bundled skills
+2026-02-05T04:52:24.310Z [DEBUG] High write ratio: blit=0, write=2227 (100.0% writes), screen=53x93
+2026-02-05T04:52:24.471Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:52:25.191Z [DEBUG] High write ratio: blit=0, write=2237 (100.0% writes), screen=53x93
+2026-02-05T04:52:28.876Z [DEBUG] High write ratio: blit=0, write=2879 (100.0% writes), screen=68x93
+2026-02-05T04:52:28.882Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-02-05T04:52:28.882Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:52:28.882Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-05T04:52:28.882Z [DEBUG] Auto tool search disabled: 0 tokens (threshold: 20000, 10% of context) [source: query]
+2026-02-05T04:52:28.884Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.31.593; cc_entrypoint=cli;
+2026-02-05T04:52:28.885Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-02-05T04:52:28.885Z [DEBUG] [API:auth] OAuth token check starting
+2026-02-05T04:52:28.885Z [DEBUG] [API:auth] OAuth token check complete
+2026-02-05T04:52:28.888Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267148888
+2026-02-05T04:52:28.888Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:52:28.888Z [DEBUG] Temp file written successfully, size: 9717 bytes
+2026-02-05T04:52:28.888Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:52:28.888Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267148888 to /Users/shanesaravia/.claude.json
+2026-02-05T04:52:28.888Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:52:28.890Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267148890
+2026-02-05T04:52:28.890Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:52:28.890Z [DEBUG] Temp file written successfully, size: 9718 bytes
+2026-02-05T04:52:28.890Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:52:28.890Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267148890 to /Users/shanesaravia/.claude.json
+2026-02-05T04:52:28.890Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:52:28.898Z [DEBUG] High write ratio: blit=0, write=2763 (100.0% writes), screen=65x93
+2026-02-05T04:52:28.899Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-02-05T04:52:30.696Z [DEBUG] Stream started - received first chunk
+2026-02-05T04:52:33.660Z [DEBUG] Forked agent [prompt_suggestion] received message: type=assistant
+2026-02-05T04:52:33.686Z [DEBUG] Forked agent [prompt_suggestion] received message: type=assistant
+2026-02-05T04:52:33.734Z [DEBUG] Getting matching hook commands for SubagentStop with query:
+2026-02-05T04:52:33.734Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:52:33.734Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-05T04:52:33.734Z [DEBUG] Forked agent [prompt_suggestion] finished: 2 messages, types=[assistant, assistant], totalUsage: input=9 output=137 cacheRead=21335 cacheCreate=498
+2026-02-05T04:52:33.735Z [DEBUG] [Speculation] enabled=false
+2026-02-05T04:52:47.477Z [DEBUG] Writing to temp file: /Users/shanesaravia/.claude.json.tmp.60224.1770267167477
+2026-02-05T04:52:47.477Z [DEBUG] Preserving file permissions: 100600
+2026-02-05T04:52:47.477Z [DEBUG] Temp file written successfully, size: 9719 bytes
+2026-02-05T04:52:47.477Z [DEBUG] Applied original permissions to temp file
+2026-02-05T04:52:47.477Z [DEBUG] Renaming /Users/shanesaravia/.claude.json.tmp.60224.1770267167477 to /Users/shanesaravia/.claude.json
+2026-02-05T04:52:47.477Z [DEBUG] File /Users/shanesaravia/.claude.json written atomically
+2026-02-05T04:52:47.491Z [DEBUG] High write ratio: blit=0, write=2770 (100.0% writes), screen=65x93
+2026-02-05T04:52:48.089Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-02-05T04:52:48.089Z [DEBUG] Found 0 hook matchers in settings
+2026-02-05T04:52:48.089Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

@@ -1,0 +1,31 @@
+# Global Claude Configuration
+
+## Available Workflows
+
+| Workflow | Trigger Phrase | Description |
+|----------|----------------|-------------|
+| [Virtual Team](workflows/virtual-team.md) | "use the virtual team workflow" | Full team: Architect → QA → Engineer (+ PM/DevOps as needed) |
+
+## Available Agents
+
+| Agent | Purpose |
+|-------|---------|
+| [Systems Architect](agents/systems-architect.md) | High-level architecture and technology choices |
+| [QA Engineer](agents/qa-engineer.md) | Test planning and TDD |
+| [Senior Software Engineer](agents/senior-software-engineer.md) | Implementation |
+| [Product Manager](agents/product-manager.md) | Requirements and scope (on-demand) |
+| [DevOps/SRE Specialist](agents/devops-sre.md) | Infrastructure and deployment (on-demand) |
+
+## Default Behavior
+
+When no workflow is requested:
+- Follow best practices for the language/framework in use
+- Match existing code style and conventions
+- Write clean, maintainable code
+- Consider security implications
+
+## Git Operations
+
+- Do NOT push code to remote repositories unless explicitly asked
+- Do NOT create pull requests unless explicitly asked
+- Committing locally is fine, but always wait for explicit instruction before pushing or creating PRs

@@ -1,0 +1,38 @@
+export type TimerStatus = 'idle' | 'running' | 'paused';
+export type Phase = 'round' | 'rest';
+export type Theme = 'dark' | 'light';
+
+export interface TimerState {
+  status: TimerStatus;
+  phase: Phase;
+  currentRound: number;
+  timeRemaining: number;
+  totalRounds: number;
+  roundDuration: number;
+  restDuration: number;
+  warningPlayed: boolean;
+}
+
+export interface Settings {
+  combosEnabled: boolean;
+  comboInterval: number;
+  theme: Theme;
+  volume: number;
+}
+
+export type TimerAction =
+  | { type: 'START' }
+  | { type: 'PAUSE' }
+  | { type: 'TOGGLE' }
+  | { type: 'RESET' }
+  | { type: 'TICK' }
+  | { type: 'SET_WARNING_PLAYED'; payload: boolean }
+  | { type: 'SET_TOTAL_ROUNDS'; payload: number }
+  | { type: 'SET_ROUND_DURATION'; payload: number }
+  | { type: 'SET_REST_DURATION'; payload: number };
+
+export type SettingsAction =
+  | { type: 'TOGGLE_COMBOS' }
+  | { type: 'SET_COMBO_INTERVAL'; payload: number }
+  | { type: 'SET_THEME'; payload: Theme }
+  | { type: 'SET_VOLUME'; payload: number };
