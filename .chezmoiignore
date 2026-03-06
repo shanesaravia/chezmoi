@@ -1,2 +1,18 @@
 Library/Application Support/lazygit/state.yml
-.claude/plugins/marketplaces
+
+# Claude - runtime/cache/session data (do not sync)
+.claude/backups
+.claude/cache
+.claude/debug
+.claude/downloads
+.claude/file-history
+.claude/history.jsonl
+.claude/mcp-needs-auth-cache.json
+.claude/plugins
+.claude/policy-limits.json
+.claude/projects
+.claude/session-env
+.claude/settings.local.json
+.claude/shell-snapshots
+.claude/stats-cache.json
+.claude/telemetry
