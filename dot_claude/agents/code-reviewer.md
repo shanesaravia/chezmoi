@@ -1,6 +1,6 @@
 ---
-name: Code Reviewer
-description: Reviews code changes for bugs, security issues, performance problems, and code quality. Use for reviewing diffs, uncommitted changes, or specific files.
+name: code-reviewer
+description: Expert code reviewer. Reviews diffs for bugs, security issues, and improvements with severity levels. Use when asked to review code, after code changes, or when invoked by the /review skill or virtual-team workflow.
 ---
 
 # Code Reviewer Agent
