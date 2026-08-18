@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash $HOME/.claude/hooks/daily-todos.sh",
+            "command": "if [ -f \"$HOME/.claude/hooks/daily-todos.sh\" ]; then bash \"$HOME/.claude/hooks/daily-todos.sh\"; fi",
             "asyncRewake": true
           }
         ]
@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash '/Users/shanesaravia/.claude/hooks/herdr-agent-state.sh' session",
+            "command": "if [ -f \"$HOME/.claude/hooks/herdr-agent-state.sh\" ]; then bash \"$HOME/.claude/hooks/herdr-agent-state.sh\" session; fi",
             "timeout": 10
           }
         ]
