@@ -1,0 +1,33 @@
+#!/bin/zsh
+# cnext — focus the next Claude session that wants you: "needs you" first,
+# then "done", skipping the one you are already looking at. Run as a kitty
+# background launch; prints nothing.
+emulate -L zsh
+# kitty launches child processes with a minimal PATH (no /opt/homebrew/bin),
+# so a bare `fzf` is unresolvable when started from a key binding. Rebuild a
+# usable PATH rather than depending on how we were invoked.
+typeset -U path
+path=( $HOME/.local/bin /opt/homebrew/bin /usr/local/bin $path )
+KITTY=${commands[kitty]:-/Applications/kitty.app/Contents/MacOS/kitty}
+STATE_DIR="$HOME/.claude/kitty-sessions"
+
+raw=$("$KITTY" @ ls 2>/dev/null | jq -r '
+  .[].tabs[].windows[]
+  | select(any(.foreground_processes[]?; (.cmdline[0]? // "") | test("(^|/)claude$")))
+  | [ (.id|tostring), (if .is_focused then "*" else " " end) ] | @tsv')
+[[ -n "$raw" ]] || exit 0
+
+typeset -a needs done_
+while IFS=$'\t' read -r wid focus; do
+  [[ $focus == "*" ]] && continue
+  [[ -f "$STATE_DIR/$wid" ]] || continue
+  read -r state _ < "$STATE_DIR/$wid"
+  case $state in
+    needs) needs+=($wid) ;;
+    done)  done_+=($wid) ;;
+  esac
+done <<< "$raw"
+
+target=${needs[1]:-${done_[1]}}
+[[ -n "$target" ]] || exit 0
+"$KITTY" @ focus-window --match "id:$target" >/dev/null 2>&1

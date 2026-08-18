@@ -1,0 +1,95 @@
+#!/bin/zsh
+# cs — list every Claude session running in kitty and jump to one.
+# Bound to cmd+shift+a in kitty (opens as an overlay), also usable standalone.
+
+emulate -L zsh
+setopt pipefail
+
+# kitty launches child processes with a minimal PATH (no /opt/homebrew/bin),
+# so a bare `fzf` is unresolvable when started from a key binding. Rebuild a
+# usable PATH rather than depending on how we were invoked.
+typeset -U path
+path=( $HOME/.local/bin /opt/homebrew/bin /usr/local/bin $path )
+KITTY=${commands[kitty]:-/Applications/kitty.app/Contents/MacOS/kitty}
+STATE_DIR="$HOME/.claude/kitty-sessions"
+
+for dep in fzf jq; do
+  if (( ! $+commands[$dep] )); then
+    print -r -- "cs: required tool '$dep' is not on PATH."
+    print -r -- "PATH=$PATH"
+    print -r -- ""
+    read -k1 "?press any key"
+    exit 1
+  fi
+done
+
+
+typeset -a rows
+now=$(date +%s)
+
+# window_id \t tab_id \t tab_title \t cwd \t focused
+raw=$("$KITTY" @ ls 2>/dev/null | jq -r '
+  .[] as $os
+  | $os.tabs[] as $tab
+  | $tab.windows[]
+  | select(any(.foreground_processes[]?; (.cmdline[0]? // "") | test("(^|/)claude$")))
+  | [ (.id|tostring), ($tab.id|tostring), $tab.title, .cwd,
+      (if .is_focused then "*" else " " end) ] | @tsv')
+
+if [[ -z "$raw" ]]; then
+  print -r -- "No Claude sessions found in kitty."
+  print -r -- ""
+  read -k1 "?press any key"
+  exit 0
+fi
+
+while IFS=$'\t' read -r wid tid title cwd focus; do
+  state=idle; since=$now; base=""; scwd=$cwd; nbg=0; ncron=0
+  if [[ -f "$STATE_DIR/$wid" ]]; then
+    read -r state since nbg ncron < "$STATE_DIR/$wid"
+    [[ $nbg   == <-> ]] || nbg=0
+    [[ $ncron == <-> ]] || ncron=0
+    base=$(sed -n '2p' "$STATE_DIR/$wid")
+    scwd=$(sed -n '3p' "$STATE_DIR/$wid")
+    [[ -n "$scwd" ]] && cwd="$scwd"
+  fi
+  # Fall back to the tab title, minus any decoration the hook painted on.
+  [[ -n "$base" ]] || base=$(print -r -- "$title" \
+      | sed -E 's/^[○◐●✓] ?//; s/ +[○◐●✓][0-9]+( [○◐●✓][0-9]+)*//; s/ +⋯[0-9]+//; s/ +⏱//')
+
+  (( d = now - since ))
+  if (( d < 60 )); then
+    el="${d}s"
+  elif (( d < 3600 )); then
+    el="$((d/60))m$((d%60))s"
+  else
+    el="$((d/3600))h$((d%3600/60))m"
+  fi
+
+  case $state in
+    needs)   sort=0; tag=$'\e[1;31m● needs you\e[0m' ;;
+    working) sort=1; tag=$'\e[1;34m◐ working  \e[0m' ;;
+    done)    sort=2; tag=$'\e[1;32m✓ done     \e[0m' ;;
+    *)       sort=3; tag=$'\e[2m○ idle     \e[0m'    ;;
+  esac
+  [[ $focus == "*" ]] && here=$'\e[2m (here)\e[0m' || here=""
+  extra=""
+  (( nbg   > 0 )) && extra+=$'\e[36m ⋯'"$nbg"$'\e[0m'
+  (( ncron > 0 )) && extra+=$'\e[35m ⏱\e[0m'
+
+  rows+=( "${sort}"$'\t'"$(printf '%s  %-22s%s \e[2m%6s  %s\e[0m%s' \
+      "$tag" "$base" "$extra" "$el" "${cwd/#$HOME/~}" "$here")"$'\t'"$wid" )
+done <<< "$raw"
+
+sel=$(print -rl -- ${(o)rows} \
+  | cut -f2,3 \
+  | fzf --ansi --delimiter=$'\t' --with-nth=1 \
+        --height=100% --reverse --no-sort \
+        --header=$'claude sessions — enter: jump   ctrl-r: refresh preview\n' \
+        --preview="$KITTY @ get-text --match id:{2} --extent screen 2>/dev/null | tail -n 45" \
+        --preview-window='right:60%:wrap' \
+        --bind='ctrl-r:refresh-preview')
+
+[[ -n "$sel" ]] || exit 0
+target=${sel##*$'\t'}
+"$KITTY" @ focus-window --match "id:$target" >/dev/null 2>&1
